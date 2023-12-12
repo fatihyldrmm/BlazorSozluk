@@ -38,7 +38,7 @@ public class BlazorSozlukContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            var connStr = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=YoutubeBlazorsozluk;Persist Security Info=True";
+            var connStr = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=YoutubeBlazorsozluk;Persist Security Info=True";
             optionsBuilder.UseSqlServer(connStr, opt =>
             {
                 opt.EnableRetryOnFailure();

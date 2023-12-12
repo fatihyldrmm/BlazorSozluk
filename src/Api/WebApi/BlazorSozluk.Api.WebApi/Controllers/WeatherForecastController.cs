@@ -1,3 +1,4 @@
+using BlazorSozluk.Api.Application.Interfaces.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorSozluk.Api.WebApi.Controllers;
@@ -11,7 +12,6 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
-
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {
         _logger = logger;

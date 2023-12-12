@@ -5,10 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Interfaces.Repositories
+namespace BlazorSozluk.Api.Application.Interfaces.Repositories;
+public interface IEntryRepository : IGenericRepository<Entry>
 {
-    public interface IEntryRepository : IGenericRepository<Entry>
-    {
 
-    }
 }
